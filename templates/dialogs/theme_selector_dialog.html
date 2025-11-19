@@ -1,0 +1,381 @@
+<div class="modern-dialog" id="themeSelectorDialog" tabindex="-1" data-no-outline="true">
+    <div class="dialog-header">
+        <h3>Personalize Theme</h3>
+        <button class="dialog-close" onclick="closeDialog('themeSelectorDialog')" tabindex="-1">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <!-- Dialog Ribbon -->
+    <div class="dialog-ribbon">
+        <div class="dialog-ribbon-group">
+            <div class="dialog-ribbon-title">Actions</div>
+            <div class="dialog-ribbon-buttons">
+                <button class="dialog-ribbon-btn primary" onclick="applySelectedTheme()" tabindex="0">
+                    <i class="fas fa-check"></i>
+                    Terapkan
+                </button>
+                <button class="dialog-ribbon-btn" onclick="closeDialog('themeSelectorDialog')" tabindex="0">
+                    <i class="fas fa-times"></i>
+                    Tutup
+                </button>
+            </div>
+        </div>
+        <div class="dialog-ribbon-group">
+            <div class="dialog-ribbon-title">Tools</div>
+            <div class="dialog-ribbon-buttons">
+                <button class="dialog-ribbon-btn" onclick="resetToDefaultTheme()" tabindex="0">
+                    <i class="fas fa-undo"></i>
+                    Reset Default
+                </button>
+                <button class="dialog-ribbon-btn" onclick="previewCurrentTheme()" tabindex="0">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+            </div>
+        </div>
+        <div class="dialog-ribbon-group">
+            <div class="dialog-ribbon-title">Theme</div>
+            <div class="dialog-ribbon-buttons">
+                <button class="dialog-ribbon-btn" onclick="randomTheme()" tabindex="0">
+                    <i class="fas fa-random"></i>
+                    Random
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dialog-body with-ribbon">
+        <div class="dialog-content">
+            <!-- Section Classic Themes -->
+            <div class="dialog-section">
+                <div class="dialog-section-title">Classic Office Themes</div>
+                <div class="theme-grid">
+                    <div class="theme-card" data-theme="blue" onclick="selectTheme('blue')">
+                        <div class="theme-preview blue">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Blue Classic</div>
+                            <div class="theme-desc">Tema Office standar</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="green" onclick="selectTheme('green')">
+                        <div class="theme-preview green">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Green Classic</div>
+                            <div class="theme-desc">Hijau profesional</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="purple" onclick="selectTheme('purple')">
+                        <div class="theme-preview purple">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Purple Classic</div>
+                            <div class="theme-desc">Ungu kreatif</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="red" onclick="selectTheme('red')">
+                        <div class="theme-preview red">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Red Classic</div>
+                            <div class="theme-desc">Merah energik</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="dark" onclick="selectTheme('dark')">
+                        <div class="theme-preview dark">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Dark Mode</div>
+                            <div class="theme-desc">Gelap nyaman mata</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Pastel Themes -->
+            <div class="dialog-section">
+                <div class="dialog-section-title">Pastel Themes</div>
+                <div class="theme-grid">
+                    <div class="theme-card" data-theme="pastel-blue" onclick="selectTheme('pastel-blue')">
+                        <div class="theme-preview pastel-blue">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Blue</div>
+                            <div class="theme-desc">Biru lembut</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-green" onclick="selectTheme('pastel-green')">
+                        <div class="theme-preview pastel-green">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Green</div>
+                            <div class="theme-desc">Hijau segar</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-purple" onclick="selectTheme('pastel-purple')">
+                        <div class="theme-preview pastel-purple">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Purple</div>
+                            <div class="theme-desc">Ungu lembut</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-pink" onclick="selectTheme('pastel-pink')">
+                        <div class="theme-preview pastel-pink">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Pink</div>
+                            <div class="theme-desc">Pink menyenangkan</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-orange" onclick="selectTheme('pastel-orange')">
+                        <div class="theme-preview pastel-orange">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Orange</div>
+                            <div class="theme-desc">Oranye cerah</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Additional Pastel Themes -->
+            <div class="dialog-section">
+                <div class="dialog-section-title">More Pastel Themes</div>
+                <div class="theme-grid">
+                    <div class="theme-card" data-theme="pastel-teal" onclick="selectTheme('pastel-teal')">
+                        <div class="theme-preview pastel-teal">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Teal</div>
+                            <div class="theme-desc">Teal elegan</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-lavender" onclick="selectTheme('pastel-lavender')">
+                        <div class="theme-preview pastel-lavender">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Lavender</div>
+                            <div class="theme-desc">Lavender calming</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-mint" onclick="selectTheme('pastel-mint')">
+                        <div class="theme-preview pastel-mint">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Mint</div>
+                            <div class="theme-desc">Mint menyegarkan</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-coral" onclick="selectTheme('pastel-coral')">
+                        <div class="theme-preview pastel-coral">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Coral</div>
+                            <div class="theme-desc">Coral hangat</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-card" data-theme="pastel-sky" onclick="selectTheme('pastel-sky')">
+                        <div class="theme-preview pastel-sky">
+                            <div class="theme-header"></div>
+                            <div class="theme-content">
+                                <div class="theme-ribbon"></div>
+                                <div class="theme-body"></div>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <div class="theme-name">Pastel Sky</div>
+                            <div class="theme-desc">Biru langit</div>
+                        </div>
+                        <div class="theme-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Theme Info -->
+            <div class="dialog-section">
+                <div class="dialog-section-title">Current Theme</div>
+                <div class="current-theme-info">
+                    <div class="current-theme-preview">
+                        <div class="theme-sample" id="currentThemeSample">
+                            <div class="sample-header"></div>
+                            <div class="sample-ribbon"></div>
+                            <div class="sample-body"></div>
+                        </div>
+                    </div>
+                    <div class="current-theme-details">
+                        <div class="theme-name-large" id="currentThemeName">Blue Classic</div>
+                        <div class="theme-desc-large" id="currentThemeDesc">Tema Office standar</div>
+                        <div class="theme-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Applied:</span>
+                                <span class="stat-value" id="themeAppliedTime">Just now</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Saved:</span>
+                                <span class="stat-value" id="themeSavedStatus">Auto-saved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div style="margin-top: 16px; padding: 12px; background: var(--office-gray-light); border-radius: 4px; border-left: 4px solid var(--office-blue);">
+                <div style="display: flex; align-items: start; gap: 8px;">
+                    <i class="fas fa-palette" style="color: var(--office-blue); margin-top: 2px;"></i>
+                    <div>
+                        <div style="font-weight: 600; color: var(--office-text); margin-bottom: 4px;">
+                            Theme Personalization
+                        </div>
+                        <small style="color: var(--office-text-light); line-height: 1.4;">
+                            Pilih dari 15 tema warna yang tersedia. Tema akan disimpan otomatis dan diterapkan secara real-time. 
+                            Setiap tema memiliki karakteristik warna yang berbeda untuk pengalaman yang personal.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dialog-footer">
+        <div class="dialog-footer-left">
+            <span>Sistem Administrasi Guru • Office 2024 v3.2</span>
+            <span id="themeDialogDate">Loading...</span>
+        </div>
+        <div class="dialog-footer-right">
+            <small style="color: var(--office-text-light);">
+                <i class="fas fa-sync-alt"></i>
+                Real-time Preview
+            </small>
+        </div>
+    </div>
+</div>

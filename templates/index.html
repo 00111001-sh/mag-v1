@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Dashboard Content -->
+    <div class="content-area active" id="dashboard">
+        {% include 'content/dashboard_content.html' %}
+    </div>
+
+    <!-- Absensi Content -->
+    <div class="content-area" id="absensi">
+        {% include 'content/absensi_content.html' %}
+    </div>
+
+    <!-- Nilai Formatif Content -->
+    <div class="content-area" id="nilaiFormatif">
+        {% include 'content/nilai_formatif_content.html' %}
+    </div>
+
+    <!-- Nilai Sumatif Content -->
+    <div class="content-area" id="nilaiSumatif">
+        {% include 'content/nilai_sumatif_content.html' %}
+    </div>
+
+    <!-- Jurnal Content -->
+    <div class="content-area" id="jurnal">
+        {% include 'content/jurnal_content.html' %}
+    </div>
+
+    <!-- Legger Content -->
+    <div class="content-area" id="legger">
+        {% include 'content/legger_content.html' %}
+    </div>
+
+    <!-- Kelas Content -->
+    <div class="content-area" id="kelas">
+        {% include 'content/kelas_content.html' %}
+    </div>
+
+    <!-- Siswa Content -->
+    <div class="content-area" id="siswa">
+        {% include 'content/siswa_content.html' %}
+    </div>
+
+    <!-- Materi Content -->
+    <div class="content-area" id="materi">
+        {% include 'content/materi_content.html' %}
+    </div>
+
+    <!-- Semester Content -->
+    <div class="content-area" id="semester">
+        {% include 'content/semester_content.html' %}
+    </div>
+
+    <!-- Database Content -->
+    <div class="content-area" id="database">
+        {% include 'content/database_content.html' %}
+    </div>
+
+    <!-- Pengguna Content -->
+    <div class="content-area" id="pengguna">
+        {% include 'content/pengguna_content.html' %}
+    </div>
+
+    <!-- Settings Content -->
+    <div class="content-area" id="settings">
+        {% include 'content/settings_content.html' %}
+    </div>
+{% endblock %}
